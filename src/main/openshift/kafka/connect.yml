@@ -1,0 +1,21 @@
+apiVersion: kafka.strimzi.io/v1beta1
+kind: KafkaConnect
+metadata:
+  name: subzero-connect
+  annotations:
+    strimzi.io/use-connector-resources: "true"
+spec:
+  image: docker.io/christofluethi/kafka-twitter:0.19.0-2.5.0
+  replicas: 1
+  bootstrapServers: subzero-kafka-bootstrap:9092
+  config:
+    config.storage.replication.factor: 3
+    offset.storage.replication.factor: 3
+    status.storage.replication.factor: 3
+    config.providers: file
+    config.providers.file.class: org.apache.kafka.common.config.provider.FileConfigProvider
+  externalConfiguration:
+    volumes:
+      - name: twitter-connector
+        secret:
+          secretName: twitter-connector-credentials
