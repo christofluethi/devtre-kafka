@@ -45,3 +45,5 @@ spec:
           value: "false"
         - name: DOCKERFILE
           value: $(params.deployment-name)/$(params.docker-file)
+        - name: CONTEXT
+          value: $(params.deployment-name)/.
