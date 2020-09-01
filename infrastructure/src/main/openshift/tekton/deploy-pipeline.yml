@@ -44,4 +44,4 @@ spec:
         - name: TLSVERIFY
           value: "false"
         - name: DOCKERFILE
-          value: $(params.docker-file)
+          value: $(params.deployment-name)/$(params.docker-file)
