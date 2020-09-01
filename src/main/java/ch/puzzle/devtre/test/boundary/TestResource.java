@@ -14,6 +14,6 @@ public class TestResource {
 
     @GET
     public Response getData() {
-        return Response.ok(jokeService.getRandomJoke()).build();
+        return Response.ok(jokeService.getRandomJoke().value.joke).build();
     }
 }

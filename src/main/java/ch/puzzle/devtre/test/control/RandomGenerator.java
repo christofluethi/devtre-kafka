@@ -17,6 +17,6 @@ public class RandomGenerator {
     @Outgoing("manual")
     public Flowable<String> generateMessages() {
         return Flowable.interval(5, TimeUnit.SECONDS)
-                .map(tick -> "random.nextInt(100)");
+                .map(tick -> jokeService.getRandomJoke().value.joke);
     }
 }

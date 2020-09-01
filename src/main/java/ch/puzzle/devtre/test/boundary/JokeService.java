@@ -3,7 +3,6 @@ package ch.puzzle.devtre.test.boundary;
 import org.eclipse.microprofile.rest.client.inject.RegisterRestClient;
 
 import javax.ws.rs.GET;
-import javax.ws.rs.HeaderParam;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
@@ -15,16 +14,16 @@ public interface JokeService {
     @GET
     @Path("/random")
     @Produces(MediaType.APPLICATION_JSON)
-    public JokeResponse getRandomJoke();
+    JokeResponse getRandomJoke();
 
-    interface JokeResponse {
-        String getType();
-        JokeResponseBody getValue();
-        String[] getCategories();
+    class JokeResponse {
+        public String type;
+        public JokeResponseBody value;
+        public String[] categories;
     }
 
-    interface JokeResponseBody {
-        Long getId();
-        String getJoke();
+    class JokeResponseBody {
+        public Long id;
+        public String joke;
     }
 }
