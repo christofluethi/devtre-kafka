@@ -1,0 +1,94 @@
+{
+  "CreatedAt":1598964012000,
+  "Id":1300775462193508353,
+  "Text":"According to Amazon, people who bought this motivating book about bots also bought:\n-   Randy Pausch's 'The Last Lecture'\n-   Tom Kafka's 'The Good Fight'\n How very motivating!",
+  "Source":"<a href=\"https://cheapbotsdonequick.com\" rel=\"nofollow\">Cheap Bots, Done Quick!</a>",
+  "Truncated":true,
+  "InReplyToStatusId":-1,
+  "InReplyToUserId":-1,
+  "InReplyToScreenName":null,
+  "GeoLocation":null,
+  "Place":null,
+  "Favorited":false,
+  "Retweeted":false,
+  "FavoriteCount":0,
+  "User":{
+    "Id":3042211503,
+    "Name":"PROSECCOnetwork",
+    "ScreenName":"PROSECCOnetwork",
+    "Location":"Where machines create",
+    "Description":"PROmoting the Scientific Exploration of Computational Creativity (Obviously!)  PROSECCO is a Coordination Action of the European Commission (FP7) to promote CC",
+    "ContributorsEnabled":false,
+    "ProfileImageURL":"http://pbs.twimg.com/profile_images/567651712651898880/QZrClVL0_normal.jpeg",
+    "BiggerProfileImageURL":"http://pbs.twimg.com/profile_images/567651712651898880/QZrClVL0_bigger.jpeg",
+    "MiniProfileImageURL":"http://pbs.twimg.com/profile_images/567651712651898880/QZrClVL0_mini.jpeg",
+    "OriginalProfileImageURL":"http://pbs.twimg.com/profile_images/567651712651898880/QZrClVL0.jpeg",
+    "ProfileImageURLHttps":"https://pbs.twimg.com/profile_images/567651712651898880/QZrClVL0_normal.jpeg",
+    "BiggerProfileImageURLHttps":"https://pbs.twimg.com/profile_images/567651712651898880/QZrClVL0_bigger.jpeg",
+    "MiniProfileImageURLHttps":"https://pbs.twimg.com/profile_images/567651712651898880/QZrClVL0_mini.jpeg",
+    "OriginalProfileImageURLHttps":"https://pbs.twimg.com/profile_images/567651712651898880/QZrClVL0.jpeg",
+    "DefaultProfileImage":false,
+    "URL":"http://PROSECCO-Network.EU",
+    "Protected":false,
+    "FollowersCount":222,
+    "ProfileBackgroundColor":"000000",
+    "ProfileTextColor":"000000",
+    "ProfileLinkColor":"3B94D9",
+    "ProfileSidebarFillColor":"000000",
+    "ProfileSidebarBorderColor":"000000",
+    "ProfileUseBackgroundImage":false,
+    "DefaultProfile":false,
+    "ShowAllInlineMedia":false,
+    "FriendsCount":83,
+    "CreatedAt":1424168979000,
+    "FavouritesCount":768,
+    "UtcOffset":-1,
+    "TimeZone":null,
+    "ProfileBackgroundImageURL":"http://abs.twimg.com/images/themes/theme1/bg.png",
+    "ProfileBackgroundImageUrlHttps":"https://abs.twimg.com/images/themes/theme1/bg.png",
+    "ProfileBannerURL":"https://pbs.twimg.com/profile_banners/3042211503/1542976771/web",
+    "ProfileBannerRetinaURL":"https://pbs.twimg.com/profile_banners/3042211503/1542976771/web_retina",
+    "ProfileBannerIPadURL":"https://pbs.twimg.com/profile_banners/3042211503/1542976771/ipad",
+    "ProfileBannerIPadRetinaURL":"https://pbs.twimg.com/profile_banners/3042211503/1542976771/ipad_retina",
+    "ProfileBannerMobileURL":"https://pbs.twimg.com/profile_banners/3042211503/1542976771/mobile",
+    "ProfileBannerMobileRetinaURL":"https://pbs.twimg.com/profile_banners/3042211503/1542976771/mobile_retina",
+    "ProfileBackgroundTiled":false,
+    "Lang":null,
+    "StatusesCount":1747,
+    "GeoEnabled":false,
+    "Verified":false,
+    "Translator":false,
+    "ListedCount":10,
+    "FollowRequestSent":false,
+    "WithheldInCountries":[
+
+    ]
+  },
+  "Retweet":false,
+  "Contributors":[
+
+  ],
+  "RetweetCount":0,
+  "RetweetedByMe":false,
+  "CurrentUserRetweetId":-1,
+  "PossiblySensitive":false,
+  "Lang":"en",
+  "WithheldInCountries":[
+
+  ],
+  "HashtagEntities":[
+
+  ],
+  "UserMentionEntities":[
+
+  ],
+  "MediaEntities":[
+
+  ],
+  "SymbolEntities":[
+
+  ],
+  "URLEntities":[
+
+  ]
+}
