@@ -12,6 +12,9 @@ spec:
       description: The directory in source that contains yaml manifests
       type: string
       default: "src/main/openshift/templates"
+    - name: microservice_name
+      description: The microservice to apply
+      type: string
   steps:
     - name: apply
       image: appuio/oc:v4.3
@@ -19,6 +22,6 @@ spec:
       command: ["/bin/bash", "-c"]
       args:
         - |-
-          echo Applying manifests in $(inputs.params.manifest_dir) directory
-          oc apply -f source/$(inputs.params.manifest_dir)
+          echo Applying manifests in $(inputs.params.microservice_name)/$(inputs.params.manifest_dir) directory
+          oc apply -f source/$(inputs.params.microservice_name)/$(inputs.params.manifest_dir)
           echo -----------------------------------

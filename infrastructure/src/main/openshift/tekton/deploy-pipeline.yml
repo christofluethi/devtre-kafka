@@ -20,6 +20,9 @@ spec:
     - name: apply-manifests
       taskRef:
         name: apply-manifests
+      params:
+        - name: microservice_name
+          value: $(params.deployment-name)
       resources:
         inputs:
           - name: source
