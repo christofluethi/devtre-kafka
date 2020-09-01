@@ -13,6 +13,6 @@ public class ManualDataTransformer {
     @Outgoing("manual-transformed")
     @Broadcast
     public String transform(String value) {
-        return Integer.toString(value.hashCode());
+        return value.toUpperCase();
     }
 }
