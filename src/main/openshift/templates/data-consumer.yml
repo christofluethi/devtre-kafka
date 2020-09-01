@@ -92,3 +92,20 @@ items:
         deploymentConfig: data-consumer
       sessionAffinity: None
       type: ClusterIP
+
+  - apiVersion: v1
+    kind: Route
+    metadata:
+      labels:
+        application: quarkus-techlab
+      name: data-consumer
+    spec:
+      port:
+        targetPort: data-consumer-http
+      tls:
+        termination: edge
+      to:
+        kind: Service
+        name: data-consumer
+        weight: 100
+      wildcardPolicy: None
