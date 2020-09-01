@@ -14,6 +14,6 @@ public class TwitterDataTransformer {
     @Outgoing("tweets")
     @Incoming("twitter-inbound")
     public String transform(Tweet tweet) {
-        return tweet.getText();
+        return tweet.getText().toLowerCase();
     }
 }
