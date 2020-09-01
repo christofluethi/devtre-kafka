@@ -11,7 +11,6 @@ public class DataConsumer {
 
     private static final Logger LOGGER = Logger.getLogger(DataConsumer.class.getName());
 
-    @Incoming("tweets")
     @Incoming("manual-transformed")
     public void streamData(String data) {
         LOGGER.info(data);
