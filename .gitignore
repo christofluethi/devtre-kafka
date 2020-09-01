@@ -4,34 +4,34 @@
 .settings/
 bin/
 
- IntelliJ
- .idea
- *.ipr
- *.iml
- *.iws
+IntelliJ
+.idea
+*.ipr
+*.iml
+*.iws
 
- # NetBeans
- nb-configuration.xml
+# NetBeans
+nb-configuration.xml
 
- # Visual Studio Code
- .vscode
- .factorypath
+# Visual Studio Code
+.vscode
+.factorypath
 
- # OSX
- .DS_Store
+# OSX
+.DS_Store
 
- # Vim
- *.swp
- *.swo
+# Vim
+*.swp
+*.swo
 
- # patch
- *.orig
- *.rej
+# patch
+*.orig
+*.rej
 
- # Maven
- */target/
- target/
- pom.xml.tag
- pom.xml.releaseBackup
- pom.xml.versionsBackup
- release.properties
+# Maven
+*/target/
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+release.properties
