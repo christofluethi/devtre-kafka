@@ -20,15 +20,8 @@ public class DataConsumer {
     private static final Logger LOGGER = Logger.getLogger(DataConsumer.class.getName());
 
     @Inject
-    @Channel("tweets-stream")
+    @Channel("tweets")
     Publisher<String> tweetsPublisher;
-
-    @Incoming("tweets")
-    @Outgoing("tweets-stream")
-    public String streamTweets(String tweet) {
-        LOGGER.info(tweet);
-        return tweet;
-    }
 
     @Incoming("manual-transformed")
     public void streamData(String data) {
