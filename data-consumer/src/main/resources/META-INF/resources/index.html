@@ -59,15 +59,12 @@
             word-break: break-word;
         }
 
-        .left-column {
-            padding: .75rem;
-            max-width: 75%;
-            min-width: 55%;
+        #data {
+            padding: 2rem 1rem;
         }
 
-        .right-column {
-            padding: .75rem;
-            max-width: 25%;
+        .ts {
+            color: #AAAAAA;
         }
 
         .container {
@@ -100,21 +97,45 @@
 <body>
 
 <div class="banner lead">
-    REACTIVE STREAAAMS
+    REACTIVE STREAM
 </div>
 
 <div class="container">
-    <h2>Last tweet</h2>
-    <div class="row">
-        <p class="col-md-12">The last tweet is <strong><span id="content">N/A</span>&nbsp;&euro;</strong>.</p>
-    </div>
+    <div id="data" class="row"></div>
 </div>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script>
-    var source = new EventSource("/data/tweets/stream");
-    source.onmessage = function (event) {
-        document.getElementById("content").innerHTML = event.data;
-    };
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+    $( window ).ready(function() {
+        connect();
+    });
+
+    function connect() {
+        var uuid = randomUUID();
+        socket = new WebSocket("ws://" + location.host + "/stream/" + uuid);
+        socket.onopen = function () {
+            connected = true;
+            console.log("Connected to the web socket");
+        };
+        socket.onmessage = function (m) {
+            $("#data").prepend("<p>"+ts()+" "+m.data+"</p>");
+        };
+    }
+
+    function randomUUID() {
+        var dt = new Date().getTime();
+        var uuid = 'xxxxxxxx-xxxx-xxxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+            var r = (dt + Math.random()*16)%16 | 0;
+            dt = Math.floor(dt/16);
+            return (c=='x' ? r :(r&0x3|0x8)).toString(16);
+        });
+        return uuid;
+    }
+
+    function ts() {
+        return "<span class=\"ts\">"+new Date()+"</span>"
+    }
 </script>
 
 </body>
