@@ -113,7 +113,7 @@
 
     function connect() {
         var uuid = randomUUID();
-        socket = new WebSocket("ws://" + location.host + "/stream/" + uuid);
+        socket = new WebSocket("wss://" + location.host + "/stream/" + uuid);
         socket.onopen = function () {
             connected = true;
             console.log("Connected to the web socket");
